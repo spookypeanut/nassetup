@@ -1,4 +1,3 @@
-data
 *.py[co]
 
 # Packages
@@ -27,5 +26,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-output
-old/test
+data
+benchmarks/fs/results
