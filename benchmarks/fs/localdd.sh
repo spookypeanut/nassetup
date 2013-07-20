@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATETIME=$(date +%s)
-RESULTDIR=results/$DATETIME
+RESULTDIR=results/localdd/$DATETIME
 mkdir -p $RESULTDIR
 
 for i in $(cat types.txt); do
