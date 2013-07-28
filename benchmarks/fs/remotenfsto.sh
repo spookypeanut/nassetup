@@ -3,11 +3,12 @@
 DATETIME=$(date +%s)
 RESULTDIR=results/remotenfsto/$DATETIME
 mkdir -p $RESULTDIR
+FILE=tiny.mp3
 
 for i in $(cat types.txt); do
     echo Doing $i
     LOG=$RESULTDIR/$i.txt
-    SRC=../../data/largefilm.m4v
+    SRC=../../data/$FILE
     DEST=/mnt/spookybackup-nfs/export/$i/
     (time rsync -vv $SRC $DEST) &>> $LOG
     sync
