@@ -9,6 +9,7 @@ FILM=largefilm.m4v
 for i in $(cat types.txt); do
     echo Doing $i
     rm /tmp/$FILM
+    sync
     LOG=$RESULTDIR/$i.txt
     SRC=/mnt/spookybackup/$i/$FILM
     DEST=/tmp/

@@ -3,7 +3,7 @@
 DATETIME=$(date +%s)
 RESULTDIR=results/remotesambato/$DATETIME
 mkdir -p $RESULTDIR
-FILE=tiny.mp3
+FILE=largefilm.m4v
 
 for i in $(cat types.txt); do
     echo Doing $i

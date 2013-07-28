@@ -2,7 +2,7 @@
 
 DATETIME=$(date +%s)
 RESULTDIR=results/remotescpfrom/$DATETIME
-FILE=tiny.mp3
+FILE=largefilm.m4v
 mkdir -p $RESULTDIR
 
 for i in $(cat types.txt); do
@@ -11,8 +11,9 @@ for i in $(cat types.txt); do
     DEST=/tmp/$FILE
     SRC=spookybackup:/mnt/$i/$FILE
     rm $DEST
+    sync
     (time scp $SRC $DEST) &>> $LOG
     sync
-    #echo "Sleeping for 1 minute"
-    #sleep 1m
+    echo "Sleeping for 1 minute"
+    sleep 1m
 done
