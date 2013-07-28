@@ -1,8 +1,10 @@
 #!/bin/bash
-echo remotescp.sh
-./remotescp.sh
-echo remotesamba.sh
-./remotesamba.sh
+echo remotescpto.sh
+./remotescpto.sh
+echo remotescpfrom.sh
+./remotescpfrom.sh
+echo remotesambato.sh
+./remotesambato.sh
 echo remotesambafrom.sh
 ./remotesambafrom.sh
 echo remotenfsto.sh
