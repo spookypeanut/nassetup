@@ -9,6 +9,6 @@ i=openshare
 echo Doing $i
 LOG=$RESULTDIR/$i.txt
 SRC=../../data/$FILE
-DEST=/media/openshare/nassetup/
+DEST=/media/openshare/tmp/nassetup/
 (time rsync -vv $SRC $DEST) &>> $LOG
 sync

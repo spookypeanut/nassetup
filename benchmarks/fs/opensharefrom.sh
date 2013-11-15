@@ -11,7 +11,7 @@ i="openshare"
 rm /tmp/$FILM
 sync
 LOG=$RESULTDIR/$i.txt
-SRC=/media/openshare/nassetup/$FILM
+SRC=/media/openshare/tmp/nassetup/$FILM
 DEST=/tmp/
 (time rsync -vv $SRC $DEST) &>> $LOG
 sync
